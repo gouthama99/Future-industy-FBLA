@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #f00; /* Red text color */
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    color: #fff; /* White text color for headings and paragraphs */
+}
+
+header {
+    background-color: #f00; /* Red background for header */
+    padding: 20px 90px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move logo to the right */
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* To make the logo circular */
+    margin-left: 20px; /* Spacing between logo and title */
+}
+
+nav {
+    background-color: #f00; /* Red background for navigation */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li button {
+    background-color: transparent;
+    border: none;
+    color: #fff; /* White text color for buttons */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    background-color: #333; /* Darker shade of red on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+section.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #f00; /* Red background for footer */
+    color: #000; /* Black text color for footer */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Specific Styles */
+#Home h2 {
+    text-align: center;
+}
+
+#Benefits .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Benefits .benefit {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #000; /* Black background for benefits */
+    color: #f00; /* Red text color for benefits */
+}
+
+@media screen and (max-width: 768px) {
+    #Benefits .benefit {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #Benefits .benefit {
+        width: 100%; /* Adjust for even smaller screens */
+    }
+}
+
+/* About Us Page Styles */
+#AboutUs h2,
+#AboutUs h3 {
+    color: #f00; /* Red color for headings */
+    text-align: center;
+    margin-top: 20px; /* Add some spacing above each heading */
+}
